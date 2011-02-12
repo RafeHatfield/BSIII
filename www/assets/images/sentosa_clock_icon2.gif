@@ -1,0 +1,110 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  
+  
+
+  
+
+
+  
+
+  <head>
+    <title>
+      Attachment – balisentosa
+    </title>
+        <link rel="search" href="/balisentosa/search" />
+        <link rel="help" href="/balisentosa/wiki/TracGuide" />
+        <link rel="alternate" href="/balisentosa/raw-attachment/ticket/48/sentosa_clock_icon-new.gif" type="image/gif; charset=iso-8859-15" title="Original Format" />
+        <link rel="up" href="/balisentosa/ticket/48" title="Ticket #48" />
+        <link rel="start" href="/balisentosa/wiki" />
+        <link rel="stylesheet" href="/balisentosa/chrome/common/css/trac.css" type="text/css" /><link rel="stylesheet" href="/balisentosa/chrome/common/css/code.css" type="text/css" />
+        <link rel="shortcut icon" href="/balisentosa/chrome/common/trac.ico" type="image/x-icon" />
+        <link rel="icon" href="/balisentosa/chrome/common/trac.ico" type="image/x-icon" />
+      <link type="application/opensearchdescription+xml" rel="search" href="/balisentosa/search/opensearch" title="Search balisentosa" />
+    <script type="text/javascript" src="/balisentosa/chrome/common/js/jquery.js"></script><script type="text/javascript" src="/balisentosa/chrome/common/js/trac.js"></script><script type="text/javascript" src="/balisentosa/chrome/common/js/search.js"></script>
+    <!--[if lt IE 7]>
+    <script type="text/javascript" src="/balisentosa/chrome/common/js/ie_pre7_hacks.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div id="banner">
+      <div id="header">
+        <a id="logo" href="https://avhm.home.cvsdude.com/ajax/#projectview?id=52431"><img src="https://avhm.home.cvsdude.com/static/all/logo.gif" alt="balisentosa" /></a>
+      </div>
+      <form id="search" action="/balisentosa/search" method="get">
+        <div>
+          <label for="proj-search">Search:</label>
+          <input type="text" id="proj-search" name="q" size="18" value="" />
+          <input type="submit" value="Search" />
+        </div>
+      </form>
+      <div id="metanav" class="nav">
+    <ul>
+      <li class="first">logged in as rafe</li><li><a href="/balisentosa/logout">Logout</a></li><li><a href="/balisentosa/prefs">Preferences</a></li><li><a href="/balisentosa/wiki/TracGuide">Help/Guide</a></li><li class="last"><a href="/balisentosa/about">About Trac</a></li>
+    </ul>
+  </div>
+    </div>
+    <div id="mainnav" class="nav">
+    <ul>
+      <li class="first"><a href="/balisentosa/wiki">Wiki</a></li><li><a href="/balisentosa/timeline">Timeline</a></li><li><a href="/balisentosa/roadmap">Roadmap</a></li><li><a href="/balisentosa/browser">Browse Source</a></li><li><a href="/balisentosa/report">View Tickets</a></li><li><a href="/balisentosa/newticket">New Ticket</a></li><li><a href="/balisentosa/search">Search</a></li><li class="last"><a href="/balisentosa/admin" title="Administration">Admin</a></li>
+    </ul>
+  </div>
+    <div id="main">
+      <div id="ctxtnav" class="nav">
+        <h2>Context Navigation</h2>
+          <ul>
+              <li class="last first"><a href="/balisentosa/ticket/48">Back to Ticket #48</a></li>
+          </ul>
+        <hr />
+      </div>
+    <div id="content" class="attachment">
+        <h1><a href="/balisentosa/ticket/48">Ticket #48</a>: sentosa_clock_icon-new.gif</h1>
+        <table id="info" summary="Description">
+          <tbody>
+            <tr>
+              <th scope="col">
+                File sentosa_clock_icon-new.gif, <span title="785 bytes">0.8 KB</span>
+                (added by rafe,  <a class="timeline" href="/balisentosa/timeline?from=2010-02-25T01%3A39%3A48Z&amp;precision=second" title="2010-02-25T01:39:48Z in Timeline">7 hours</a> ago)
+              </th>
+            </tr>
+            <tr>
+              <td class="message searchable">
+                <p>
+clock icon for last minute offers
+</p>
+
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <div id="preview" class="searchable">
+    <div class="image-file"><img src="/balisentosa/raw-attachment/ticket/48/sentosa_clock_icon-new.gif" alt="sentosa_clock_icon-new.gif" /></div>
+        </div>
+          <div class="buttons">
+            <form method="get" action="">
+              <div id="delete">
+                <input type="hidden" name="action" value="delete" />
+                <input type="submit" value="Delete attachment" />
+              </div>
+            </form>
+          </div>
+    </div>
+    <div id="altlinks">
+      <h3>Download in other formats:</h3>
+      <ul>
+        <li class="last first">
+          <a rel="nofollow" href="/balisentosa/raw-attachment/ticket/48/sentosa_clock_icon-new.gif">Original Format</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+    <div id="footer" lang="en" xml:lang="en"><hr />
+      <a id="tracpowered" href="http://trac.edgewall.org/"><img src="/balisentosa/chrome/common/trac_logo_mini.png" height="30" width="107" alt="Trac Powered" /></a>
+      <p class="left">
+        Powered by <a href="/balisentosa/about"><strong>Trac 0.11.5stable</strong></a><br />
+        By <a href="http://www.edgewall.org/">Edgewall Software</a>.
+      </p>
+      <p class="right"><a href="http://cvsdude.com">Powered by the Subversion, Trac & Bugzilla Hosting Experts, Codesion.com</a></p>
+    </div>
+  </body>
+</html>

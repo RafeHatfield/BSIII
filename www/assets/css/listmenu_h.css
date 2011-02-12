@@ -1,0 +1,121 @@
+
+.menulist, .menulist  ul {
+ margin: 0;
+ padding: 0;
+ list-style: none;
+}
+.menulist{
+	position:absolute;
+	left:1px;
+	top:106px;
+	height:29px;
+	background:url(../images/bg_menu.png) 0 0 no-repeat;
+	padding:1px 0 13px 3px;
+	width:930px;
+	}
+.menulist ul {
+ display: none;
+ position: absolute;
+ top: 1.0em; margin-top: 17px; /* I'm using ems and px to allow people to zoom their font */
+ left:0px;
+ width:164px;
+ border:#4a4c46 1px solid;
+}
+.menulist .last ul{
+	left:auto;
+	right:3px;;
+	
+	}
+.menulist ul ul {
+ top: -1px; margin-top: 0;
+ left: 148px;
+}
+.menulist li {
+ float: left;
+ display: block;
+ position: relative;
+ text-shadow:#2d2b2c 1px 1px 1px;
+ padding:0 2px 0 0;
+ background:url(../images/bg_menuli.png) right top no-repeat;
+ text-transform:uppercase;
+}
+.menulist .last{
+	background:none;
+	/*float:right;*/
+	padding-right:10px;
+	}
+.menulist ul li {
+ float: none;
+ margin: 0;
+ margin-bottom:0px;
+ font-size:11px;
+ background:none;
+ padding:0;
+ text-transform:none;
+ text-shadow:none;
+ background:#000;
+	filter:alpha(opacity=60); -moz-opacity:0.6; -khtml-opacity: 0.6; opacity: 0.6;
+	font-family:Arial, Helvetica, sans-serif;
+}
+.menulist ul li a:hover{
+	text-decoration:underline;
+	}
+.menulist ul .first{
+	padding:17px 0 0 0;
+	}
+.menulist ul>li:last-child {
+ margin-bottom: 0px; /* Mozilla fix */
+}
+.menulist ul li a{
+	padding-bottom:9px;
+	} 
+.menulist a {
+ display: block;
+ padding:6px 9px 8px 9px;
+ color: #fff;
+ text-decoration: none;
+}
+.menulist a:hover, .menulist a.highlighted:hover, .menulist a:focus {
+ color: #FFF;
+ text-decoration:none;
+}
+.menulist a.highlighted {
+ color: #FFF;
+}
+.menulist a .subind {
+ display: none;
+}
+.menulist ul a .subind {
+ display: block;
+ float: right;
+}
+.menulist a {
+ float: left;
+}
+.menulist ul a {
+ float: none;
+}
+/* \*/
+.menulist a {
+ float: none;
+}
+/* */
+/*
+ HACKS: IE/Win:
+ A small height on <li> and <a> tags and floating prevents gaps in menu.
+ * html affects <=IE6 and *:first-child+html affects IE7.
+ You may want to move these to browser-specific style sheets.
+\*/
+*:first-child+html .menulist ul li {
+ float: left;
+ width: 100%;
+}
+
+* html .menulist ul li {
+ float: left;
+ height: 1%;
+}
+* html .menulist ul a {
+ height: 1%;
+}
+/* End Hacks */
