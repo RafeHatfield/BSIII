@@ -9,6 +9,8 @@
 	   <li>  |  </li>
 	   <li><a href="index.cfm?fuseaction=content.sitemap&page=sitemap">Sitemap</a></li>
 	   <li>  |  </li>
+	   <li><a href="index.cfm?fuseaction=content.display&page=links-we-like">Links</a></li>
+	   <li>  |  </li>
 	   <li><a href="index.cfm?fuseaction=contact.unsubscribe">Unsubscribe</a></li>
 	   <li>  |  </li>
 	   <li><a href="index.cfm?fuseaction=contact.contactDetails&page=contact-us">Contact</a></li>

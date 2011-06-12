@@ -18,7 +18,7 @@
 					<div>
 						<p><strong>Thank you for contacting us.</strong></p>
 
-						<p><strong>We will respond to your enqiry as soon as possible.</strong></p>
+						<p><strong>We will respond to your enquiry as soon as possible.</strong></p>
 					</div>
 					
 				<cfelse>

@@ -156,7 +156,7 @@
 		                   </div>
 		                   
 		                   <div>
-			                   <cfset localDateTime = dateAdd('h','13',now()) />
+			                   <cfset localDateTime = dateAdd('h','12',now()) />
 			                   <span class="dateBrown">Sentosa Date & Time:</span><span class="dateBlack"> #dateFormat(localDateTime,"mmm d, yyyy")# | <strong>#lcase(timeFormat(localDateTime,"h:mm tt"))#</strong></span>
 			               </div>
 
