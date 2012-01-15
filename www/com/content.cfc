@@ -29,7 +29,7 @@
 				
 				#con_body#
 				
-				<cfif len(con_attach1Desc) or len(con_attach2Desc) or len(con_attach3Desc)>
+				<cfif len(con_attach1Desc) or len(con_attach2Desc) or len(con_attach3Desc) or len(con_attach4Desc) or len(con_attach5Desc) or len(con_attach6Desc)>
 				
 					<div style="margin-left: 50px">
 						<cfif len(con_attach1Desc)>
@@ -39,12 +39,27 @@
 						</cfif>
 						<cfif len(con_attach2Desc)>
 							<div style="margin-top:5px; font-size:13px; font-weight: bold">
-								<a href="#application.imagePath#attachments/#con_attach2#" target="_blank"><cfif findNoCase("pdf",con_attach1)> <img src="#application.imagePath#acrobat_20x20.png" /> </cfif>#con_attach2Desc#</a>
+								<a href="#application.imagePath#attachments/#con_attach2#" target="_blank"><cfif findNoCase("pdf",con_attach2)> <img src="#application.imagePath#acrobat_20x20.png" /> </cfif>#con_attach2Desc#</a>
 							</div>
 						</cfif>
 						<cfif len(con_attach3Desc)>
 							<div style="margin-top:5px; font-size:13px; font-weight: bold">
-								<a href="#application.imagePath#attachments/#con_attach3#" target="_blank"><cfif findNoCase("pdf",con_attach1)> <img src="#application.imagePath#acrobat_20x20.png" /> </cfif>#con_attach3Desc#</a>
+								<a href="#application.imagePath#attachments/#con_attach3#" target="_blank"><cfif findNoCase("pdf",con_attach3)> <img src="#application.imagePath#acrobat_20x20.png" /> </cfif>#con_attach3Desc#</a>
+							</div>
+						</cfif>
+						<cfif len(con_attach4Desc)>
+							<div style="margin-top:5px; font-size:13px; font-weight: bold">
+								<a href="#application.imagePath#attachments/#con_attach4#" target="_blank"><cfif findNoCase("pdf",con_attach4)> <img src="#application.imagePath#acrobat_20x20.png" /> </cfif>#con_attach4Desc#</a>
+							</div>
+						</cfif>
+						<cfif len(con_attach5Desc)>
+							<div style="margin-top:5px; font-size:13px; font-weight: bold">
+								<a href="#application.imagePath#attachments/#con_attach5#" target="_blank"><cfif findNoCase("pdf",con_attach5)> <img src="#application.imagePath#acrobat_20x20.png" /> </cfif>#con_attach5Desc#</a>
+							</div>
+						</cfif>
+						<cfif len(con_attach6Desc)>
+							<div style="margin-top:5px; font-size:13px; font-weight: bold">
+								<a href="#application.imagePath#attachments/#con_attach6#" target="_blank"><cfif findNoCase("pdf",con_attach6)> <img src="#application.imagePath#acrobat_20x20.png" /> </cfif>#con_attach6Desc#</a>
 							</div>
 						</cfif>
 					</div>
@@ -165,7 +180,7 @@
 		<cfset var getContent = "" />
 
 		<cfquery name="getContent" datasource="#application.DBDSN#" username="#application.DBUserName#" password="#application.DBPassword#">
-			SELECT top (1) con_id, con_menuTitle, con_title, con_intro, con_body, con_fuseAction, con_isMenu, con_menuArea, con_menuOrder, con_active, con_type, con_gloryBox, con_leftMenuArea, con_approved, con_link, con_metaDescription, con_metaKeywords, con_parentID, con_childListType, con_attach1, con_attach2, con_attach3, con_attach1Desc, con_attach2Desc, con_attach3Desc,
+			SELECT top (1) con_id, con_menuTitle, con_title, con_intro, con_body, con_fuseAction, con_isMenu, con_menuArea, con_menuOrder, con_active, con_type, con_gloryBox, con_leftMenuArea, con_approved, con_link, con_metaDescription, con_metaKeywords, con_parentID, con_childListType, con_attach1, con_attach2, con_attach3, con_attach4, con_attach5, con_attach6, con_attach1Desc, con_attach2Desc, con_attach3Desc, con_attach4Desc, con_attach5Desc, con_attach6Desc,
 <!--- 				img_id, img_title, img_altText, img_name --->
 
 				(
@@ -334,6 +349,30 @@
 
 		</cfif>
 
+		<cfif len(arguments.con_attach4)>
+			
+			<cffile action="upload" filefield="con_attach4" destination="#application.imageUploadPath#attachments/" nameconflict="makeUnique">
+			<cfset attach4File = application.contentObj.sanitise(cffile.serverFileName) & '.' & cffile.serverFileExt />
+			<cffile action="rename" source="#application.imageUploadPath#attachments/#cffile.ServerFile#" destination="#application.imageUploadPath#attachments/#attach4File#" />
+
+		</cfif>
+
+		<cfif len(arguments.con_attach5)>
+			
+			<cffile action="upload" filefield="con_attach5" destination="#application.imageUploadPath#attachments/" nameconflict="makeUnique">
+			<cfset attach5File = application.contentObj.sanitise(cffile.serverFileName) & '.' & cffile.serverFileExt />
+			<cffile action="rename" source="#application.imageUploadPath#attachments/#cffile.ServerFile#" destination="#application.imageUploadPath#attachments/#attach5File#" />
+
+		</cfif>
+
+		<cfif len(arguments.con_attach6)>
+			
+			<cffile action="upload" filefield="con_attach6" destination="#application.imageUploadPath#attachments/" nameconflict="makeUnique">
+			<cfset attach6File = application.contentObj.sanitise(cffile.serverFileName) & '.' & cffile.serverFileExt />
+			<cffile action="rename" source="#application.imageUploadPath#attachments/#cffile.ServerFile#" destination="#application.imageUploadPath#attachments/#attach6File#" />
+
+		</cfif>
+
 		<cfif arguments.con_id gt 0>
 
 			<cfquery name="updateContent"  datasource="#application.DBDSN#" username="#application.DBUserName#" password="#application.DBPassword#">
@@ -369,7 +408,25 @@
 						con_attach3 = <cfqueryparam cfsqltype="cf_sql_varchar" value="#attach3File#" list="false" />,
 					</cfif>
 					
-					con_attach3Desc = <cfqueryparam cfsqltype="cf_sql_varchar" value="#arguments.con_attach3Desc#" list="false" />
+					con_attach3Desc = <cfqueryparam cfsqltype="cf_sql_varchar" value="#arguments.con_attach3Desc#" list="false" />,
+
+					<cfif len(attach4File)>
+						con_attach4 = <cfqueryparam cfsqltype="cf_sql_varchar" value="#attach4File#" list="false" />,
+					</cfif>
+					
+					con_attach4Desc = <cfqueryparam cfsqltype="cf_sql_varchar" value="#arguments.con_attach4Desc#" list="false" />,
+
+					<cfif len(attach5File)>
+						con_attach5 = <cfqueryparam cfsqltype="cf_sql_varchar" value="#attach5File#" list="false" />,
+					</cfif>
+					
+					con_attach5Desc = <cfqueryparam cfsqltype="cf_sql_varchar" value="#arguments.con_attach5Desc#" list="false" />,
+
+					<cfif len(attach6File)>
+						con_attach6 = <cfqueryparam cfsqltype="cf_sql_varchar" value="#attach6File#" list="false" />,
+					</cfif>
+					
+					con_attach6Desc = <cfqueryparam cfsqltype="cf_sql_varchar" value="#arguments.con_attach6Desc#" list="false" />
 
 					<cfif arguments.old_con_approved neq arguments.con_approved>
 						, con_approved = <cfqueryparam cfsqltype="cf_sql_bit" value="#arguments.con_approved#" list="false" />
@@ -419,7 +476,25 @@
 						con_attach3,
 					</cfif>
 					
-					con_attach3Desc
+					con_attach3Desc,
+
+					<cfif len(attach4File)>
+						con_attach4,
+					</cfif>
+					
+					con_attach4Desc,
+
+					<cfif len(attach5File)>
+						con_attach5,
+					</cfif>
+					
+					con_attach5Desc,
+
+					<cfif len(attach6File)>
+						con_attach6,
+					</cfif>
+					
+					con_attach6Desc
 
 					<cfif arguments.con_approved>
 						, con_approvedBy
@@ -460,7 +535,25 @@
 						<cfqueryparam cfsqltype="cf_sql_varchar" value="#attach3File#" list="false" />,
 					</cfif>
 					
-					<cfqueryparam cfsqltype="cf_sql_varchar" value="#arguments.con_attach3Desc#" list="false" />
+					<cfqueryparam cfsqltype="cf_sql_varchar" value="#arguments.con_attach3Desc#" list="false" />,
+
+					<cfif len(attach4File)>
+						<cfqueryparam cfsqltype="cf_sql_varchar" value="#attach4File#" list="false" />,
+					</cfif>
+					
+					<cfqueryparam cfsqltype="cf_sql_varchar" value="#arguments.con_attach4Desc#" list="false" />,
+
+					<cfif len(attach5File)>
+						<cfqueryparam cfsqltype="cf_sql_varchar" value="#attach5File#" list="false" />,
+					</cfif>
+					
+					<cfqueryparam cfsqltype="cf_sql_varchar" value="#arguments.con_attach5Desc#" list="false" />,
+
+					<cfif len(attach6File)>
+						<cfqueryparam cfsqltype="cf_sql_varchar" value="#attach6File#" list="false" />,
+					</cfif>
+					
+					<cfqueryparam cfsqltype="cf_sql_varchar" value="#arguments.con_attach6Desc#" list="false" />
 
 					<cfif arguments.con_approved>
 						, <cfqueryparam cfsqltype="cf_sql_integer" value="#cookie.usr_id#" list="false" />
@@ -1567,25 +1660,3 @@
 	</cffunction>
 
 </cfcomponent>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

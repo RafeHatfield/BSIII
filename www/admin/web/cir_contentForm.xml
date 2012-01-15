@@ -44,9 +44,15 @@
 		<set name="attributes.con_attach1" value="#qContent.con_attach1#" />
 		<set name="attributes.con_attach2" value="#qContent.con_attach2#" />
 		<set name="attributes.con_attach3" value="#qContent.con_attach3#" />
+		<set name="attributes.con_attach4" value="#qContent.con_attach3#" />
+		<set name="attributes.con_attach5" value="#qContent.con_attach3#" />
+		<set name="attributes.con_attach6" value="#qContent.con_attach3#" />
 		<set name="attributes.con_attach1Desc" value="#qContent.con_attach1Desc#" />
 		<set name="attributes.con_attach2Desc" value="#qContent.con_attach2Desc#" />
 		<set name="attributes.con_attach3Desc" value="#qContent.con_attach3Desc#" />
+		<set name="attributes.con_attach4Desc" value="#qContent.con_attach3Desc#" />
+		<set name="attributes.con_attach5Desc" value="#qContent.con_attach3Desc#" />
+		<set name="attributes.con_attach6Desc" value="#qContent.con_attach3Desc#" />
 		<set name="attributes.img_id" value="#qContent.img_id#" />
 		<set name="attributes.img_name" value="#qContent.img_name#" />
 		<set name="attributes.img_title" value="#qContent.img_title#" />
@@ -72,9 +78,15 @@
 		<set name="attributes.con_attach1" value="" />
 		<set name="attributes.con_attach2" value="" />
 		<set name="attributes.con_attach3" value="" />
+		<set name="attributes.con_attach4" value="" />
+		<set name="attributes.con_attach5" value="" />
+		<set name="attributes.con_attach6" value="" />
 		<set name="attributes.con_attach1Desc" value="" />
 		<set name="attributes.con_attach2Desc" value="" />
 		<set name="attributes.con_attach3Desc" value="" />
+		<set name="attributes.con_attach4Desc" value="" />
+		<set name="attributes.con_attach5Desc" value="" />
+		<set name="attributes.con_attach6Desc" value="" />
 		<set name="attributes.img_id" value="" />
 		<set name="attributes.img_name" value="" />
 		<set name="attributes.img_title" value="" />

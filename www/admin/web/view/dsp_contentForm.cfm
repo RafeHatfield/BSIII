@@ -284,6 +284,42 @@
 			</tr>
 
 			<tr>
+				<td class="leftForm">Attachment 4</td>
+				<td class="whiteGutter">&nbsp;</td>
+				<td>
+					<input type="file" name="con_attach4" value="#attributes.con_attach4#" style='width:250px'><cfif len(attributes.con_attach4)> (Current: #attributes.con_attach4#)</cfif>
+					<br />
+					Desc: <input type="text" name="con_attach4Desc" value="#attributes.con_attach4Desc#" style='width:250px'>
+				</td>
+				<td class="whiteGutter">&nbsp;</td>
+				<td class="rightForm">&nbsp;</td>
+			</tr>
+
+			<tr>
+				<td class="leftForm">Attachment 5</td>
+				<td class="whiteGutter">&nbsp;</td>
+				<td>
+					<input type="file" name="con_attach5" value="#attributes.con_attach5#" style='width:250px'><cfif len(attributes.con_attach5)> (Current: #attributes.con_attach5#)</cfif>
+					<br />
+					Desc: <input type="text" name="con_attach5Desc" value="#attributes.con_attach5Desc#" style='width:250px'>
+				</td>
+				<td class="whiteGutter">&nbsp;</td>
+				<td class="rightForm">&nbsp;</td>
+			</tr>
+
+			<tr>
+				<td class="leftForm">Attachment 6</td>
+				<td class="whiteGutter">&nbsp;</td>
+				<td>
+					<input type="file" name="con_attach6" value="#attributes.con_attach6#" style='width:250px'><cfif len(attributes.con_attach6)> (Current: #attributes.con_attach6#)</cfif>
+					<br />
+					Desc: <input type="text" name="con_attach6Desc" value="#attributes.con_attach6Desc#" style='width:250px'>
+				</td>
+				<td class="whiteGutter">&nbsp;</td>
+				<td class="rightForm">&nbsp;</td>
+			</tr>
+
+			<tr>
 				<td class="formFooter" colspan="5">
 					<input type="submit" value="Save" name='save' onMouseOver="this.className='buttonOver'" onMouseOut="this.className='button'" class="button">
 				</td>
